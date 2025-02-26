@@ -46,20 +46,20 @@ public abstract class Employee extends Person {
 
     public double calculateAnnualSalary() { return salary * 12; }
 
-    public void assignTask(String task) { System.out.println(fullName + " has been assigned: " + task); }
+    public void assignTask(String task) { System.out.println(super.fullName + " has been assigned: " + task); }
 
-    public void completeTask(String task) { System.out.println(fullName + " completed: " + task); }
+    public void completeTask(String task) { System.out.println(super.fullName + " completed: " + task); }
 
     public void increaseExperience() { yearsOfExperience++; }
 
     public void promote(String newPosition, double newSalary) { 
         this.position = newPosition; 
         this.salary = newSalary; 
-        System.out.println(fullName + " got promoted to " + position); 
+        System.out.println(super.fullName + " got promoted to " + position); 
 }
 
     public void displayEmployeeDetails() {
-        System.out.println("Name: " + fullName);
+        System.out.println("Name: " + super.fullName);
         System.out.println("ID: " + employeeId);
         System.out.println("Position: " + position);
         System.out.println("Department: " + department);

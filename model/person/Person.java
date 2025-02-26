@@ -5,7 +5,7 @@ import java.time.Period;
 
 public abstract class Person {
     private final int id;
-    private final String fullName;
+    private String fullName;
     private String address;
     private String phone;
     private String email;
